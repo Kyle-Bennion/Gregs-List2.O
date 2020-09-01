@@ -19,8 +19,7 @@ export default class Job {
               <p class="card-text">${this.description}</p>
               <div class="d-flex justify-content-between">
                   <button class="btn btn-outline-danger" onclick="app.jobsController.removeJob('${this.id}')">Delete</button>
-                  <button class="btn btn-outline-info" onclick="app.jobsController.bid('${this.id}')">+ $100</button>
-                  <p>$${this.price.toFixed(2)}</p>
+                  <button class="btn btn-outline-info" onclick="app.jobsController.bid('${this.id}')">Apply</button>
               </div>
           </div>
       </div>

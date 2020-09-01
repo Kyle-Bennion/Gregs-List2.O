@@ -6,7 +6,7 @@ function _drawJobs() {
 
   let jobs = ProxyState.jobs
   let templates = ''
-  jobs.foreach(j => templates += j.templates)
+  jobs.forEach(j => templates += j.templates)
   document.getElementById('dataj').innerHTML = templates
 }
 
