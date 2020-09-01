@@ -54,6 +54,36 @@
         </div>
         <div class="row" id="data">
         </div>
+        <div class="row my-3">
+            <div class="col" id="form">
+                <form onsubmit="app.jobsController.createJob()" class="form-inline">
+                    <div class="form-group p-1">
+                        <label class="mr-1" for="company">Company:</label>
+                        <input type="text" name="company" id="company" class="form-control" placeholder="Company:...">
+                    </div>
+                    <div class="form-group p-1">
+                        <label class="mr-1" for="jobtitle">Job Title:</label>
+                        <input type="text" name="jobtitle" id="jobtitle" class="form-control"
+                            placeholder="Job Title:...">
+                    </div>
+                    <div class="form-group p-1">
+                        <label class="mr-1" for="rate">Rate:</label>
+                        <input type="number" name="rate" id="rate" class="form-control" placeholder="Rate:...">
+                    </div>
+                    <div class="form-group p-1">
+                        <label class="mr-1" for="hours">Hours</label>
+                        <input type="number" name="hours" id="hours" class="form-control" placeholder="Hours">
+                    </div>
+                    <div class="form-group p-1">
+                        <label class="mr-1" for="description">Description</label>
+                        <input type="text" name="description" id="description" class="form-control"
+                            placeholder="Description...">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">List Job</button>
+                </form>
+            </div>
+        </div>
+
         <div class="row" id="dataj">
         </div>
 

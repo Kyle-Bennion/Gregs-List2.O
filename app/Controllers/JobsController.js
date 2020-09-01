@@ -6,7 +6,7 @@ function _drawJobs() {
 
   let jobs = ProxyState.jobs
   let templates = ''
-  jobs.forEach(j => templates += j.templates)
+  jobs.forEach(j => templates += j.Template)
   document.getElementById('dataj').innerHTML = templates
 }
 
@@ -33,17 +33,15 @@ export default class JobsController {
     let form = event.target
     let newJob = {
       // @ts-ignore
-      make: form.company.value,
+      company: form.company.value,
       // @ts-ignore
-      model: form.jobTitle.value,
+      jobTitle: form.jobtitle.value,
       // @ts-ignore
-      year: form.rate.value,
-      // @ts-ignore
-      price: parseInt(form.price.value),
+      rate: form.rate.value,
       // @ts-ignore
       description: form.description.value,
       // @ts-ignore
-      imgUrl: form.hours.value
+      hours: form.hours.value
     }
     try {
       jobsService.createJob(newJob)
@@ -79,8 +77,3 @@ export default class JobsController {
 
 }
 
-
-
-
-
-}

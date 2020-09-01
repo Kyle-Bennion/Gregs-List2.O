@@ -10,10 +10,10 @@ export default class Job {
   }
 
   get Template() {
-    return `            
+    return /*html*/`            
     <div class="col-4">
       <div class="card">
-          <img class="card-img-top" src=".//placehold.it/200x200" alt="">
+          <img class="card-img-top" src="./placehold.it/200x200" alt="">
           <div class="card-body">
               <h4 class="card-title">${this.company} - ${this.jobTitle} - ${this.hours}</h4>
               <p class="card-text">${this.description}</p>
